@@ -1,0 +1,96 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+
+$primaryColor: #545FD9;
+$primaryLightColor: #D5D8F6;
+$secondaryColor: #FFAE93;
+$secondaryDarkColor: #CC8B76;
+$warningColor: #FA6C80;
+$white: #FFFFFF;
+$lightGreyColor: #F7F7F7;
+$greyColor: #E5E5E5;
+$midGreyColor: #B2B2B2;
+$darkGreyColor: #4D4D4D;
+$almostBlackColor: #252525;
+$indicator_orange: #FFBB6B;
+$indicator_green: #71CB7B;
+
+$boxHeight: 24px;
+$radius: 3px;
+$filedWidth: 44px;
+
+$inputWidth: 220px;
+$inputPadding: 5px;
+$sPadding: 6px;
+$mPadding: 10px;
+
+$bold: 800;
+$semiBold: 600;
+$regular: 400;
+
+$mTransition: 0.5s;
+
+$inputBorder: 1px solid $greyColor;
+$previewBorder: 1px solid $almostBlackColor;
+
+@mixin flex-center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin appearance-non() {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+
+@mixin sectionTitle(){
+    font-size: 11px;
+    font-weight: $semiBold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin DialogTitle {
+    font-size: 26px;
+    font-weight: $bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin ParameterTitle {
+    font-size: 11px;
+    font-weight: $regular;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin Value {
+    font-size: 11px;
+    font-weight: $regular;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin button {
+    font-size: 11px;
+    font-weight: $semiBold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin softShadow(){
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.2);
+}

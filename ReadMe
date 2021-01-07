@@ -1,0 +1,1 @@
+In case needed sass cold be compiled with the following command: sass --watch ./scss/style.scss:style.css
